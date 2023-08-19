@@ -6,7 +6,6 @@ const Products = () => {
   const {
     state: { products },
   } = useStateContext();
-
   return (
     <div className="flex flex-wrap items-center justify-center gap-10 my-10">
       {products?.map((pd) => (

@@ -27,8 +27,8 @@ const ProductDetail = () => {
   }, [products, product]);
 
   return (
-    <div className="">
-      <div className="flex gap-5 items-center mt-10">
+    <div className="my-20 bg-primary p-10 rounded-md">
+      <div className="flex gap-5 items-center">
         <img
           src={product?.image}
           className="h-[300px] border-2 p-10 shadow-lg rounded"
@@ -66,7 +66,7 @@ const ProductDetail = () => {
         </div>
       </div>
       <div className="mt-10">
-        <h1 className="mb-10">Products you may know</h1>
+        <h1 className="mb-5">Products you may know</h1>
         <div className="flex flex-wrap gap-10">
           {products?.map((item) => (
             <div key={item?.id}>

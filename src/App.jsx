@@ -10,7 +10,7 @@ import "animate.css"
 
 const App = () => {
   return (
-    <div className="container mx-auto">
+    <div className="w-[80%] mx-auto">
       <Navbar />
       <Routes>
         <Route path="/" element={<Products/>}/>
